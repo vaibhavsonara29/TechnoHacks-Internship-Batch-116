@@ -1,0 +1,103 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ffb74d, #ff7043);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Wrapper Styling */
+.wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Weather Card Styling */
+.weather-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+h1 {
+    color: #d32f2f;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ff7043;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.5);
+}
+
+button {
+    padding: 14px 22px;
+    background: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 25px;
+    background: #ffe0b2;
+    padding: 20px;
+    border-radius: 10px;
+    color: #d32f2f;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
